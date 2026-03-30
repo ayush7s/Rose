@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 💛</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 💌 Envelope -->
+<div class="envelope-screen" id="envelope">
+    <div class="envelope" onclick="openEnvelope()">
+        <div class="flap"></div>
+        <div class="letter">Tap to open 💌</div>
+    </div>
+</div>
+
+<!-- 🎬 Main Content -->
+<div class="main hidden">
+
+    <!-- Background + Image -->
+    <div class="bg-blur" id="bgBlur"></div>
+    <img id="mainImage" class="main-image">
+
+    <!-- Effects -->
+    <div class="hearts"></div>
+    <div class="sparkles"></div>
+    <div class="overlay"></div>
+
+    <!-- Content -->
+    <div class="container">
+        <h1 id="typing"></h1>
+        <button id="nextBtn">Next</button>
+    </div>
+
+</div>
+
+<audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
